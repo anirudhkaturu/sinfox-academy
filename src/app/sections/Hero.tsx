@@ -172,7 +172,7 @@ export const Hero = React.memo(function Hero() {
                     strokeWidth="5"
                     strokeLinecap="round"
                     initial={{ pathLength: 0, opacity: 0 }}
-                    animate={{ pathLength: 1, opacity: 1 }}
+                    animate={{ pathLength: 0.7, opacity: 1 }}
                     transition={{
                       duration: 1,
                       delay: 0.8,
