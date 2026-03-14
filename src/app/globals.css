@@ -1,0 +1,131 @@
+/* app/globals.css */
+@import "tailwindcss";
+
+@theme {
+  /* Font families */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space), ui-sans-serif, system-ui, sans-serif;
+  
+  /* Colors */
+  --color-primary: #F3F4F1;
+  --color-secondary: #013220;
+  --color-tertiary: #A3AD9E;
+  --color-accent: #E67E22;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #F3F4F1;
+    color: #013220;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    background: #E67E22;
+    color: white;
+  }
+
+  *:focus-visible {
+    outline: 2px solid #E67E22;
+    outline-offset: 2px;
+  }
+}
+
+/* Simple utilities without pseudo-selectors */
+@utility bg-primary {
+  background-color: #F3F4F1;
+}
+
+@utility bg-secondary {
+  background-color: #013220;
+}
+
+@utility bg-tertiary {
+  background-color: #A3AD9E;
+}
+
+@utility bg-accent {
+  background-color: #E67E22;
+}
+
+@utility text-primary {
+  color: #013220;
+}
+
+@utility text-secondary {
+  color: #F3F4F1;
+}
+
+@utility text-tertiary {
+  color: #A3AD9E;
+}
+
+@utility text-accent {
+  color: #E67E22;
+}
+
+@utility border-primary {
+  border-color: #F3F4F1;
+}
+
+@utility border-secondary {
+  border-color: #013220;
+}
+
+@utility border-tertiary {
+  border-color: #A3AD9E;
+}
+
+@utility border-accent {
+  border-color: #E67E22;
+}
+
+@utility tactile-texture {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+/* Custom scrollbar - use @layer utilities instead */
+@layer utilities {
+  .scrollbar-custom {
+    scrollbar-width: thin;
+    scrollbar-color: #A3AD9E #F3F4F1;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: #F3F4F1;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background: #A3AD9E;
+    border-radius: 5px;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background: #013220;
+  }
+
+  .magnetic-wrap {
+    position: relative;
+    display: inline-flex;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
