@@ -19,7 +19,6 @@ import {
   Play,
   Target,
   Layers,
-  Sparkles,
 } from "lucide-react";
 import { MagneticButton } from "@/app/components/MagneticButton";
 import { FloatingShapes } from "@/app/components/FloatingShapes";

@@ -27,13 +27,13 @@ export function MissionSection() {
             </p>
             <p className="text-lg text-secondary/60 leading-relaxed">
               The digital economy evolves monthly, while traditional education
-              updates every decade. We have stripped away the "How-To"
+              updates every decade. We have stripped away the &quot;How-To&quot;
               tutorials to focus on high-leverage systems.
             </p>
             <p className="text-lg text-secondary/60 leading-relaxed">
-              Our graduates don't just "do social media" or "write code." They
-              engineer distribution logic, orchestrate agentic workflows, and
-              design resonant digital vibes.
+              Our graduates don&apos;t just &quot;do social media&quot; or
+              &quot;write code.&quot; They engineer distribution logic,
+              orchestrate agentic workflows, and design resonant digital vibes.
             </p>
             <div className="flex gap-4 pt-4">
               <MagneticButton
@@ -60,7 +60,7 @@ export function MissionSection() {
               <div className="relative z-10 flex flex-col h-full">
                 <div className="flex items-center justify-between px-6 pt-5 pb-3 border-b border-secondary/20 bg-primary/60 backdrop-blur-sm">
                   <span className="text-xs font-mono text-secondary/60">
-                    // SINFOX_PROTOCOL
+                    SINFOX_PROTOCOL
                   </span>
                   <span className="h-2 w-2 rounded-full bg-accent shadow-[0_0_8px_rgba(214,255,0,0.8)]" />
                 </div>
@@ -78,9 +78,12 @@ export function MissionSection() {
                         <div className="flex items-center justify-between gap-4">
                           <span className="text-accent/80">[01]</span>
                           <span className="truncate">
-                            Eliminating the <span className="text-accent">Theory_Gap</span>
+                            Eliminating the{" "}
+                            <span className="text-accent">Theory_Gap</span>
                           </span>
-                          <span className="text-[10px] text-accent/70">DONE</span>
+                          <span className="text-[10px] text-accent/70">
+                            DONE
+                          </span>
                         </div>
                         <div className="h-1 w-full rounded-full bg-secondary/20 overflow-hidden">
                           <div className="h-full w-full bg-accent/70" />
@@ -90,9 +93,14 @@ export function MissionSection() {
                         <div className="flex items-center justify-between gap-4">
                           <span className="text-accent/80">[02]</span>
                           <span className="truncate">
-                            Integrating <span className="text-accent">Agentic_Workflows</span>
+                            Integrating{" "}
+                            <span className="text-accent">
+                              Agentic_Workflows
+                            </span>
                           </span>
-                          <span className="text-[10px] text-tertiary/80">ACTIVE</span>
+                          <span className="text-[10px] text-tertiary/80">
+                            ACTIVE
+                          </span>
                         </div>
                         <div className="h-1 w-full rounded-full bg-secondary/20 overflow-hidden">
                           <div className="h-full w-2/3 bg-tertiary/80" />
@@ -102,9 +110,14 @@ export function MissionSection() {
                         <div className="flex items-center justify-between gap-4">
                           <span className="text-accent/80">[03]</span>
                           <span className="truncate">
-                            Scaling <span className="text-accent">Individual_Leverage</span>
+                            Scaling{" "}
+                            <span className="text-accent">
+                              Individual_Leverage
+                            </span>
                           </span>
-                          <span className="text-[10px] text-secondary/70">MAX</span>
+                          <span className="text-[10px] text-secondary/70">
+                            MAX
+                          </span>
                         </div>
                         <div className="h-1 w-full rounded-full bg-secondary/20 overflow-hidden">
                           <div className="h-full w-5/6 bg-secondary/80" />
@@ -117,13 +130,17 @@ export function MissionSection() {
                         <div className="text-[9px] uppercase tracking-[0.16em] text-secondary/60">
                           Latency
                         </div>
-                        <div className="text-[11px] text-secondary/90">12ms</div>
+                        <div className="text-[11px] text-secondary/90">
+                          12ms
+                        </div>
                       </div>
                       <div className="rounded-lg border border-secondary/30 bg-primary/40 px-2 py-1.5">
                         <div className="text-[9px] uppercase tracking-[0.16em] text-secondary/60">
                           Throughput
                         </div>
-                        <div className="text-[11px] text-secondary/90">3.4x</div>
+                        <div className="text-[11px] text-secondary/90">
+                          3.4x
+                        </div>
                       </div>
                       <div className="rounded-lg border border-secondary/30 bg-primary/40 px-2 py-1.5">
                         <div className="text-[9px] uppercase tracking-[0.16em] text-secondary/60">
@@ -141,7 +158,11 @@ export function MissionSection() {
                       <motion.div
                         className="absolute inset-0"
                         animate={{ rotate: [0, 360] }}
-                        transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
+                        transition={{
+                          duration: 18,
+                          repeat: Infinity,
+                          ease: "linear",
+                        }}
                       >
                         <span className="absolute -top-1 left-1 h-2 w-2 rounded-full bg-accent shadow-[0_0_10px_rgba(214,255,0,0.9)]" />
                         <span className="absolute bottom-3 right-0 h-1.5 w-1.5 rounded-full bg-tertiary shadow-[0_0_8px_rgba(110,231,183,0.8)]" />
