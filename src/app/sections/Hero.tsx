@@ -131,14 +131,14 @@ export const Hero = React.memo(function Hero() {
           {/* Left Content */}
           <motion.div
             style={{ y: y2 }}
-            className="space-y-8"
+            className="space-y-8 text-center md:text-left"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
           >
             <motion.div
               variants={itemVariants}
-              className="flex flex-wrap items-center gap-3"
+              className="flex flex-wrap items-center justify-center md:justify-start gap-3"
             >
               <span className="text-[11px] uppercase tracking-[0.25em] text-secondary/40">
                 Sinfox / Academy
@@ -151,13 +151,13 @@ export const Hero = React.memo(function Hero() {
 
             <motion.h1
               variants={itemVariants}
-              className="text-4xl md:text-6xl lg:text-7xl font-bold text-secondary leading-[1.05] tracking-tight"
+              className="text-5xl sm:text-6xl lg:text-7xl font-bold text-secondary leading-[1.05] tracking-tight"
             >
               <span className="block text-secondary/60 text-base md:text-lg mb-4 font-mono tracking-[0.28em] uppercase">
                 Built for Digital Architects
               </span>
-              The foundation for <br />
-              <span className="relative inline-block">
+              The foundation for{" "}
+              <span className="sm:block md:inline relative">
                 High‑Leverage Individuals
                 <svg
                   className="absolute -bottom-1 left-0 w-full h-3"
@@ -185,7 +185,7 @@ export const Hero = React.memo(function Hero() {
 
             <motion.p
               variants={itemVariants}
-              className="text-lg text-secondary/60 max-w-lg leading-relaxed"
+              className="text-lg text-secondary/60 max-w-lg leading-relaxed mx-auto md:mx-0"
             >
               Bridging the gap between university theory and market reality. We
               equip undergraduate and graduate students with the high-fidelity
@@ -194,10 +194,10 @@ export const Hero = React.memo(function Hero() {
 
             <motion.div
               variants={itemVariants}
-              className="flex flex-wrap gap-6"
+              className="flex flex-col sm:flex-row items-center justify-center md:justify-start flex-wrap gap-6"
             >
               <MagneticButton
-                className="bg-secondary text-primary px-8 py-4 rounded-full font-semibold text-lg shadow-[0_10px_40px_-10px_rgba(1,50,32,0.3)] hover:shadow-[0_20px_60px_-15px_rgba(1,50,32,0.4)] transition-all"
+                className="bg-secondary text-primary px-8 py-4 rounded-full font-semibold text-lg shadow-[0_10px_40px_-10px_rgba(1,50,32,0.3)] hover:shadow-[0_20px_60px_-15px_rgba(1,50,32,0.4)] transition-all w-full sm:w-auto"
                 ariaLabel="Secure your admission"
                 magneticStrength={0.15}
                 maxOffset={8}
@@ -211,7 +211,7 @@ export const Hero = React.memo(function Hero() {
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
                 transition={{ type: "spring", stiffness: 400, damping: 25 }}
-                className="flex items-center gap-3 px-8 py-4 rounded-full border border-secondary/20 text-secondary font-medium hover:border-secondary/40 hover:bg-secondary/5 transition-all"
+                className="flex items-center gap-3 px-8 py-4 rounded-full border border-secondary/20 text-secondary font-medium hover:border-secondary/40 hover:bg-secondary/5 transition-all w-full sm:w-auto justify-center"
                 aria-label="Watch Demo Video"
               >
                 <motion.div
@@ -230,7 +230,7 @@ export const Hero = React.memo(function Hero() {
 
             <motion.div
               variants={itemVariants}
-              className="flex gap-8 pt-8 border-t border-secondary/10"
+              className="flex gap-8 pt-8 border-t border-secondary/10 justify-center md:justify-start"
             >
               {stats.map((stat) => (
                 <motion.div

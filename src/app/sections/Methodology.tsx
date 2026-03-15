@@ -37,9 +37,10 @@ export const Methodology = React.memo(function Methodology() {
               id="methodology-heading"
               className="text-3xl md:text-5xl font-bold leading-tight"
             >
-              Academic Integration
-              <br />
-              <span className="text-accent">Tailored Progression.</span>
+              Academic Integration{" "}
+              <span className="text-accent xs:block sm:inline">
+                Tailored Progression.
+              </span>
             </h2>
             <p className="text-primary/70 text-lg leading-relaxed max-w-lg">
               Our curriculum adapts to your stage, providing leverage for both
