@@ -1,11 +1,33 @@
 "use client";
 
 import { motion } from "framer-motion";
-
 import { MagneticButton } from "@/app/components/MagneticButton";
 import { TactileCard } from "@/app/components/TactileCard";
 
+// Replace with your actual WhatsApp number (include country code, no '+' or spaces)
+const WHATSAPP_NUMBER = "1234567890"; // e.g., "1234567890"
+// const DEFAULT_MESSAGE = "Hello, I'm interested in the Sinfox program.";
+
 export function ContactFormSection() {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const fullName = formData.get("fullName") as string;
+    const email = formData.get("email") as string;
+    const details = formData.get("details") as string;
+
+    // Build a custom message with form data
+    let message = `*New transmission from Sinfox portal*\n\n`;
+    if (fullName) message += `*Name:* ${fullName}\n`;
+    if (email) message += `*Email:* ${email}\n`;
+    if (details) message += `\n*Details:*\n${details}\n`;
+    message += `\n— Sent via Sinfox website`;
+
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <section className="pb-24">
       <div className="max-w-7xl mx-auto px-6">
@@ -25,13 +47,13 @@ export function ContactFormSection() {
             </h2>
             <p className="text-secondary/60 text-sm md:text-base max-w-md">
               Use this channel for admission vetting, portfolio reviews, or
-              technical queries about the Sinfox stack. Responses are handled
-              by our Growth Advisors.
+              technical queries about the Sinfox stack. Responses are handled by
+              our Growth Advisors.
             </p>
           </motion.div>
 
           <TactileCard className="bg-secondary/5 border-secondary/15">
-            <form className="space-y-5">
+            <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <label
@@ -83,6 +105,7 @@ export function ContactFormSection() {
 
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2">
                 <MagneticButton
+                  type="submit"
                   className="bg-secondary text-primary px-7 py-3 rounded-full font-semibold text-sm shadow-[0_10px_30px_-10px_rgba(1,50,32,0.4)]"
                   ariaLabel="Initiate connection"
                 >
@@ -100,4 +123,3 @@ export function ContactFormSection() {
     </section>
   );
 }
-
