@@ -78,9 +78,9 @@ export const Hero = React.memo(function Hero() {
 
   const stats = useMemo(
     () => [
-      { value: "500+", label: "Graduates" },
-      { value: "94%", label: "Placement Rate" },
-      { value: "$120k", label: "Avg. Salary" },
+      { value: "500+", label: "Students Trained" },
+      { value: "94%", label: "Course Completion Rate" },
+      { value: "30+", label: "Startups Incubated" },
     ],
     [],
   );
