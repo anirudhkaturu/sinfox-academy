@@ -13,44 +13,43 @@ export const Features = React.memo(function Features() {
     () => [
       {
         icon: Code2,
-        title: "Vibe Coding & UI Resonance",
+        title: "Vibe Coding",
         description:
-          "Design interfaces and content that feel native to the future, not recycled from 2015 Dribbble boards.",
+          "Design modern interfaces that feel native to the future, not outdated.",
         color: COLORS.secondary,
       },
       {
         icon: TrendingUp,
-        title: "Algorithmic Distribution Logic",
+        title: "Algorithmic Growth",
         description:
-          "Understand discovery engine math in real time and engineer systems that win attention on purpose.",
+          "Learn how algorithms work and build systems that capture attention.",
         color: COLORS.accent,
       },
       {
         icon: Users,
-        title: "Market-Ready Unit Economics",
+        title: "Market-Ready Economics",
         description:
-          "Build offers, funnels, and pricing models that survive contact with real customers and real CAC.",
+          "Build pricing and funnels that succeed with real customers.",
         color: COLORS.tertiary,
       },
       {
         icon: Target,
-        title: "Executive Crisis Management",
+        title: "Crisis Management",
         description:
-          "Learn to think like a venture operator under pressure: high-stakes rhetoric, clear decisions, clean math.",
+          "Make clear decisions under pressure with high‑stakes thinking.",
         color: COLORS.secondary,
       },
       {
         icon: Users,
-        title: "Venture Design & Scaling",
-        description:
-          "Architect SaaS, media, and product ecosystems that compound instead of plateauing at 10K MRR.",
+        title: "Scaling Ventures",
+        description: "Architect systems that grow beyond early limits.",
         color: COLORS.accent,
       },
       {
         icon: Target,
-        title: "Sinfox Global Network Access",
+        title: "Global Network",
         description:
-          "Plug into a vetted network of operators, founders, and investors aligned around leverage, not vanity.",
+          "Connect with a vetted network of operators, founders, and investors.",
         color: COLORS.tertiary,
       },
     ],
@@ -76,7 +75,7 @@ export const Features = React.memo(function Features() {
           className="text-center mb-20 space-y-4"
         >
           <span className="text-accent font-semibold tracking-wider text-sm uppercase">
-            The 6 Pillars
+            Six Pillars
           </span>
           <h2
             id="curriculum-heading"
@@ -85,7 +84,7 @@ export const Features = React.memo(function Features() {
             Student <ScrambleText text="Paths" className="text-accent" />
           </h2>
           <p className="text-secondary/60 max-w-2xl mx-auto text-lg">
-            Systems over tools. Every pillar compounds into a high‑leverage profile instead of a generic resume.
+            Each pillar builds a high‑leverage profile — not a generic resume.
           </p>
         </motion.div>
 

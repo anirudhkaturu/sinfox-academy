@@ -76,11 +76,11 @@ export const Hero = React.memo(function Hero() {
     [],
   );
 
+  // Simplified stats – reduced to two key metrics for cleaner presentation
   const stats = useMemo(
     () => [
       { value: "500+", label: "Students Trained" },
-      { value: "94%", label: "Course Completion Rate" },
-      { value: "30+", label: "Startups Incubated" },
+      { value: "94%", label: "Course Completion" },
     ],
     [],
   );
@@ -149,47 +149,26 @@ export const Hero = React.memo(function Hero() {
               </span>
             </motion.div>
 
+            {/* Simplified heading – removed the extra sub-line and made the main message more direct */}
             <motion.h1
               variants={itemVariants}
               className="text-5xl sm:text-6xl lg:text-7xl font-bold text-secondary leading-[1.05] tracking-tight"
             >
-              <span className="block text-secondary/60 text-base md:text-lg mb-4 font-mono tracking-[0.28em] uppercase">
-                Built for Digital Architects
-              </span>
-              The foundation for{" "}
-              <span className="sm:block md:inline relative">
+              Building{" "}
+              <span className="relative inline-block">
                 High‑Leverage Individuals
-                <svg
-                  className="absolute -bottom-1 left-0 w-full h-3"
-                  viewBox="0 0 300 12"
-                  preserveAspectRatio="none"
-                  aria-hidden="true"
-                >
-                  <motion.path
-                    d="M0,6 Q150,0 300,6"
-                    fill="none"
-                    stroke={COLORS.accent}
-                    strokeWidth="5"
-                    strokeLinecap="round"
-                    initial={{ pathLength: 0, opacity: 0 }}
-                    animate={{ pathLength: 0.7, opacity: 1 }}
-                    transition={{
-                      duration: 1,
-                      delay: 0.8,
-                      ease: [0.22, 1, 0.36, 1] as const,
-                    }}
-                  />
-                </svg>
+                {/* Static underline – simpler than animated SVG */}
+                <span className="absolute -bottom-2 left-0 w-full h-1 bg-accent/60 rounded-full" />
               </span>
             </motion.h1>
 
+            {/* Shorter, punchier description */}
             <motion.p
               variants={itemVariants}
               className="text-lg text-secondary/60 max-w-lg leading-relaxed mx-auto md:mx-0"
             >
-              Bridging the gap between university theory and market reality. We
-              equip undergraduate and graduate students with the high-fidelity
-              skills to lead where others merely follow.
+              From theory to market reality. We equip students with the skills
+              to lead, not just follow.
             </motion.p>
 
             <motion.div
@@ -248,14 +227,14 @@ export const Hero = React.memo(function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* Right Visual - BIGGER spinning circle */}
+          {/* Right Visual – kept the design but simplified a few animations */}
           <motion.div
             style={{ y: y1 }}
             className="relative hidden lg:flex items-center justify-center"
             aria-hidden="true"
           >
             <div className="relative w-full max-w-md aspect-square mx-auto">
-              {/* Central sphere - INCREASED from w-60 h-60 (240px) to w-80 h-80 (320px) */}
+              {/* Central sphere */}
               <motion.div
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 rounded-full shadow-2xl"
                 style={{
@@ -278,7 +257,7 @@ export const Hero = React.memo(function Hero() {
                   },
                 }}
               >
-                {/* Inner circle - scaled proportionally from inset-3 to inset-4 */}
+                {/* Inner circle */}
                 <motion.div
                   className="absolute inset-4 rounded-full bg-primary flex items-center justify-center"
                   animate={{
@@ -294,7 +273,6 @@ export const Hero = React.memo(function Hero() {
                     ease: "easeInOut",
                   }}
                 >
-                  {/* Icon - increased from w-20 h-20 (80px) to w-28 h-28 (112px) */}
                   <Code2
                     className="w-28 h-28 text-secondary"
                     strokeWidth={1}
@@ -303,7 +281,7 @@ export const Hero = React.memo(function Hero() {
                 </motion.div>
               </motion.div>
 
-              {/* Orbiting elements - scaled up */}
+              {/* Orbiting elements */}
               {orbitingElements.map((item) => (
                 <motion.div
                   key={item.deg}
@@ -332,33 +310,23 @@ export const Hero = React.memo(function Hero() {
                 </motion.div>
               ))}
 
-              {/* Decorative rings - scaled up */}
+              {/* Decorative rings – kept but simplified animation */}
               <motion.div
                 className="absolute inset-0 border border-secondary/10 rounded-full"
-                animate={{ scale: [1, 1.04, 1], opacity: [0.1, 0.2, 0.1] }}
-                transition={{
-                  duration: 6,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              />
-              <motion.div
-                className="absolute inset-14 border border-secondary/5 rounded-full"
-                animate={{ scale: [1, 1.02, 1], opacity: [0.05, 0.12, 0.05] }}
+                animate={{ scale: [1, 1.02, 1], opacity: [0.1, 0.15, 0.1] }}
                 transition={{
                   duration: 8,
                   repeat: Infinity,
                   ease: "easeInOut",
-                  delay: 2,
                 }}
               />
-              <div className="absolute inset-28 border border-dashed border-tertiary/25 rounded-full" />
+              <div className="absolute inset-14 border border-secondary/5 rounded-full" />
             </div>
           </motion.div>
         </div>
       </div>
 
-      {/* Scroll indicator */}
+      {/* Scroll indicator – kept as it's subtle and useful */}
       <motion.div
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
         initial={{ opacity: 0, y: -10 }}
