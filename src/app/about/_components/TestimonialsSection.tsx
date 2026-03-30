@@ -9,7 +9,7 @@ const paradoxBlocks = [
     ],
   },
   {
-    heading: "Sinfox Methodology",
+    heading: "SkillBridge Methodology",
     bullets: [
       "Stack integration: using AI to generate assets while Python handles the logic.",
       "Live algorithmic testing: understanding discovery engine math in real time.",

@@ -22,7 +22,7 @@ export function AboutHero() {
           className="max-w-3xl"
         >
           <span className="text-accent font-semibold tracking-wider text-sm uppercase mb-4 block">
-            Sinfox / Academy
+            SKILL BRIDGE / Academy
           </span>
           <h1 className="text-5xl md:text-7xl font-bold text-secondary leading-[1.05] mb-6">
             We Build the{" "}
@@ -41,7 +41,7 @@ export function AboutHero() {
             </span>
           </h1>
           <p className="text-xl text-secondary/60 leading-relaxed max-w-2xl">
-            Sinfox Academy is not a school; it is a technical environment
+            SKILL BRIDGE Academy is not a school; it is a technical environment
             designed to bridge the gap between abstract university theory and
             the high-fidelity reality of modern markets.
           </p>

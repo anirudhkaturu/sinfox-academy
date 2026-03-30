@@ -40,7 +40,7 @@ export function MissionSection() {
             <div className="flex gap-4 pt-4">
               <MagneticButton
                 className="bg-secondary text-primary px-6 py-3 rounded-full font-medium"
-                ariaLabel="Apply to Sinfox Academy"
+                ariaLabel="Apply to SKILL BRIDGE Academy"
               >
                 Apply <ArrowUpRight className="w-4 h-4" />
               </MagneticButton>
@@ -63,7 +63,7 @@ export function MissionSection() {
                 <div className="relative z-10 flex flex-col h-full">
                   <div className="flex items-center justify-between px-6 pt-5 pb-3 border-b border-secondary/20 bg-primary/60 backdrop-blur-sm">
                     <span className="text-xs font-mono text-secondary/60">
-                      SINFOX_PROTOCOL
+                      SKILLBRIDGE_PROTOCOL
                     </span>
                     <span className="h-2 w-2 rounded-full bg-accent shadow-[0_0_8px_rgba(214,255,0,0.8)]" />
                   </div>

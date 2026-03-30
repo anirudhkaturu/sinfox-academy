@@ -23,7 +23,7 @@ export const Community = React.memo(function Community() {
             id="community-heading"
             className="text-4xl md:text-5xl font-bold text-secondary mb-4"
           >
-            The Sinfox <span className="text-accent">Venture Lab</span>
+            The SkillBridge <span className="text-accent">Venture Lab</span>
           </h2>
           <p className="text-secondary/60 max-w-2xl mx-auto">
             We don&apos;t do homework. We build projects that get funded.

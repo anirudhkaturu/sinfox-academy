@@ -30,7 +30,7 @@ export function ContactHero() {
           className="max-w-3xl space-y-4"
         >
           <div className="inline-flex items-center gap-3 text-xs font-mono tracking-[0.25em] uppercase text-secondary/60">
-            <span>Sinfox / Academy</span>
+            <span>SKILLBRIDGE / Academy</span>
             <span className="h-px w-10 bg-accent/70" />
             <span>Institutional Access</span>
           </div>

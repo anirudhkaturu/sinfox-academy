@@ -61,7 +61,7 @@ export const CTA = React.memo(function CTA() {
             </div>
 
             <p className="text-xs text-primary/60 pt-4 font-mono tracking-[0.18em] uppercase">
-              © 2026 Sinfox Academics · A Division of Sinfox Global Holdings
+              © 2026 SKILL BRIDGE ACADEMY · A Division of Sinfox Global Holdings
             </p>
           </div>
         </motion.div>

@@ -6,7 +6,6 @@ import { TactileCard } from "@/app/components/TactileCard";
 
 // Replace with your actual WhatsApp number (include country code, no '+' or spaces)
 const WHATSAPP_NUMBER = "1234567890"; // e.g., "1234567890"
-// const DEFAULT_MESSAGE = "Hello, I'm interested in the Sinfox program.";
 
 export function ContactFormSection() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -17,7 +16,7 @@ export function ContactFormSection() {
     const details = formData.get("details") as string;
 
     // Build a custom message with form data
-    let message = `*New transmission from Sinfox portal*\n\n`;
+    let message = `*New transmission from Skill Bridge portal*\n\n`;
     if (fullName) message += `*Name:* ${fullName}\n`;
     if (email) message += `*Email:* ${email}\n`;
     if (details) message += `\n*Details:*\n${details}\n`;
@@ -47,7 +46,7 @@ export function ContactFormSection() {
             </h2>
             <p className="text-secondary/60 text-sm md:text-base max-w-md">
               Use this channel for admission vetting, portfolio reviews, or
-              technical queries about the Sinfox stack. Responses are handled by
+              technical queries about the SKILLBRIDGE stack. Responses are handled by
               our Growth Advisors.
             </p>
           </motion.div>

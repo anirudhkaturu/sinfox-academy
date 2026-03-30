@@ -40,7 +40,7 @@ export function CoursesCtaSection() {
               <ArrowUpRight className="w-5 h-5" aria-hidden="true" />
             </MagneticButton>
             <p className="text-[11px] text-primary/70 font-mono tracking-[0.18em] uppercase pt-2">
-              © 2026 Sinfox Academics · Built for the Bold · A Division of
+              © 2026 Skill Bridge Academics · Built for the Bold · A Division of
               Sinfox Global Holdings
             </p>
           </div>
