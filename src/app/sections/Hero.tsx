@@ -141,7 +141,7 @@ export const Hero = React.memo(function Hero() {
               className="flex flex-wrap items-center justify-center md:justify-start gap-3"
             >
               <span className="text-[11px] uppercase tracking-[0.25em] text-secondary/40">
-                Sinfox / Academy
+                Skill / Bridge
               </span>
               <span className="h-1 w-10 rounded-full bg-accent/80" />
               <span className="text-[11px] uppercase tracking-[0.25em] text-secondary/60">

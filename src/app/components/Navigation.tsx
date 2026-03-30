@@ -4,8 +4,7 @@ import React, { useState, useEffect, useCallback, useMemo } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-// Swapped ArrowUpRight for ExternalLink
-import { Menu, X, ArrowRight, GraduationCap, ExternalLink } from "lucide-react";
+import { Menu, X, ArrowRight, ExternalLink } from "lucide-react";
 import { ScrambleText } from "./ScrambleText";
 import { MagneticButton } from "./MagneticButton";
 
@@ -63,14 +62,13 @@ export const Navigation = React.memo(function Navigation() {
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
-            <div className="w-10 h-10 bg-secondary rounded-xl flex items-center justify-center shadow-lg">
-              <GraduationCap
-                className="w-6 h-6 text-accent"
-                aria-hidden="true"
-              />
-            </div>
-            <span className="text-xl font-bold text-secondary tracking-tight">
-              SINFOX<span className="text-accent">.</span>ACADEMY
+            <img
+              src="/main_logo/skillbridgelogo.png"
+              alt="Skill Bridge Logo"
+              className="h-17 w-auto drop-shadow-sm -translate-y-1.5"
+            />
+            <span className="text-2xl font-bold text-secondary tracking-tight">
+              SKILL<span className="text-accent">.</span>BRIDGE
             </span>
           </motion.div>
         </Link>
@@ -103,7 +101,6 @@ export const Navigation = React.memo(function Navigation() {
               Enroll Now <ArrowRight className="w-4 h-4" aria-hidden="true" />
             </MagneticButton>
 
-            {/* UPDATED: Desktop Exit/External Link Button */}
             <motion.a
               href="https://sinfoxmedia.com/"
               target="_blank"
@@ -121,7 +118,6 @@ export const Navigation = React.memo(function Navigation() {
         </div>
 
         <div className="flex items-center gap-2 md:hidden">
-          {/* UPDATED: Mobile exit button icon */}
           <motion.a
             href="https://sinfoxmedia.com/"
             target="_blank"
@@ -186,7 +182,6 @@ export const Navigation = React.memo(function Navigation() {
                   <ArrowRight className="w-4 h-4" aria-hidden="true" />
                 </MagneticButton>
 
-                {/* UPDATED: Mobile Footer Link Icon */}
                 <a
                   href="https://sinfoxmedia.com/"
                   target="_blank"
